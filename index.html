@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+    h1{
+        padding: 15px;
+    }
+    nav{
+        float: right;
+        margin-top: -60px;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+        margin: 0 15px;
+    }
+    nav a:hover{
+        color: navy;
+        border-radius: 50px;
+    }
+    article{
+        text-align: center;
+        padding: 60px;
+        background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%232c3e50"/></svg>');
+        color: white;
+        font-size: larger;
+    }
+    article button{
+        background-color: #3498db;
+        color: white;
+        padding: 15px;
+        width: 130px;
+        border-radius: 5px;
+        border: none;
+    }
+    article button a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    article button:hover{
+        transform: scale(1.2);
+    }
+    section{
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 70px;
+    }
+    section h1{
+        color: #2c3e50;
+    }
+    section p{
+        color: #7f8c8d;
+    }
+    .Hello{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .hero{
+        background-color: #ffffff;
+        padding: 50px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+    }
+    .hero h2{
+        color: #2c3e50;
+    }
+    .hero p{
+        color: #333333;
+    }
+    .hero:hover{
+        transform: translateY(-10px);
+    }
+    .hi{
+        background-color: #ffffff;
+        padding: 50px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+    }
+    .hi h2{
+        color: #2c3e50;
+    }
+    .hi p{
+        color: #333333;
+    }
+    .hi:hover{
+        transform: translateY(-10px);
+    }
+    .devil{
+        background-color: #ffffff;
+        padding: 50px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+    }
+    .devil h2{
+        color: #2c3e50;
+    }
+    .devil p{
+        color: #333333;
+    }
+    .devil:hover{
+        transform: translateY(-10px);
+    }
+    .nice p {
+        color: black;
+        margin-bottom: 20px;
+    }
+    .game{
+        display: grid;
+        gap: 50px;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .job{
+        background-color: #ffffff;
+    }
+    .are{
+        padding: 100px;
+        background-color: #f9f9f9;
+    }
+    .tt p{
+        color: black;
+        margin-right: 550px;
+    }
+    .tt input{
+        margin-bottom: 20px;
+         display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .rr input{
+         width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .rr input{
+        height: 150px;
+    }
+    .ss{
+        max-width: 600px;
+        margin: auto;
+    }
+    footer{
+        background-color: #2c3e50;
+    }
+    .jj{
+        text-align: center;
+        color: white;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    .jj a{
+        text-align: center;
+        color: white;
+    }
+    .jj{
+        flex: 1;
+        min-width: 200px;
+        margin-top: 200px;
+    }
+    .can{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    center a{
+        text-decoration: none;
+        color: white;
+    }
+    center a:hover{
+        color: #3498db;
+    }
+    @media (max-width: 768px) {
+            .can {
+                grid-template-columns: 1fr;
+            }
+            .nav-links{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+    <h1>My Portfolio</h1>
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    </nav>
+    </header>
+    <article>
+    <h1>Jotesh Kumar</h1>
+    <p>I help Web Developer navigate challenges and capitalize on opportunities for</p>
+    <p>sustainable growth.</p> <br>
+    <button><a href="#contact">Get Started</a></button> <br><br>
+    </article>
+    <section id="services">
+    <h1>Our Services</h1>
+    <p>I offer comprehensive Web solutions tailored to your specific needs</p>
+    <br><br>
+    <div class="Hello">
+    <div class="hero">
+        <h2>Business Strategy</h2>
+        <p>Develop effective strategies to achieveyour business objectives and outperform competitors.</p>
+    </div>
+    <div class="hi">
+        <h2>Financial Advisory</h2>
+        <p>Optimize your financial operations and make informed investment decisions.</p>
+    </div>
+    <div class="devil">
+    <h2>Market Research</h2>
+    <p>Gain valuable insights into market trends and consumer behavior.</p>
+    </div>
+    </div>
+    </section>
+    <section class="job" id="about">
+    <div class="game">
+    <div class="nice">
+    <h1>About Our Firm</h1>
+    <p>StrategicEdge Consulting was founded in 2005 with a mission to help businesses reach their full potential. Our team of experienced consultants brings diverse expertise from various industries.</p>
+    <p>We believe in building long-term partnerships with our clients, focusing on sustainable solutions that deliver measurable results.</p>
+    </div>
+    <div class="good">
+    <img src="IMG-20260106-WA0185.jpg" alt="" width="400px">
+    </div>
+    </div>
+    </section>
+    <section class="are" id="contact">
+        <h1>Contact Us</h1>
+        <p>Reach out to discuss how we can help your business grow.</p>
+        <div class="ss">
+        <div class="tt">
+        <p class="tt">Name</p>
+        <input type="text">
+        <p class="tt">Email</p>
+        <input type="text">
+        <div class="rr">
+        <p>Message</p>
+        <input type="text" >
+        <br><br>
+        </div>
+        <button style="background-color: #3498db; padding: 10px; text-align: center; margin-right: 490px;border: none;"><a href="#"></a>Send Massage</button>
+        </div>
+    </section>
+    <footer>
+        <div class="can">
+            <div class="jj">
+                <h2>StrategicEdge Consulting</h2>
+                <p>Providing expert business consulting services since <br>
+                2005
+                </p>
+            </div>
+            <div class="jj">
+                <h2>Contact Info</h2>
+                <p>Email: info@strategicedge.com <br>
+                Phone: (123) 456-7890
+       f         </p>
+            </div>
+            <div class="jj">
+            <h2>Quick Links</h2>
+            <a href="#home">Home</a> <br>
+            <a href="#services">Services</a> <br>
+            <a href="#about">About</a> <br>
+            <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <hr style="color: white;"> <br>
+        <p style="text-align: center; color: white;">© 2023 StrategicEdge Consulting. All rights reserved.</p>
+        <br><br>
+        <center><a href="#top">Back To Top</a></center>
+    </footer>
+</body>
+</html>

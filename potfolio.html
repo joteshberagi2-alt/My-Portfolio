@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .white{
+        color: white;
+    }
+    .orange{
+        color: #d4af37;
+    }
+    .flex{
+        float: right;
+    }
+    ul{
+        display: flex;
+        gap: 30px;
+        margin-top: -2px;
+        margin-right: 100px;
+    }
+    ul a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+    ul a:hover{
+        color: #d4af37;
+    }
+    ul a:hover::after{
+        width: 100%;
+    }
+    ul a :hover{
+        border-radius: 3px;
+    }
+    header{
+        background-color: black;
+        padding: 30px;
+        font-size: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .text{
+        background-image: url(images.jpg);
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        align-items: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 350px;
+        max-width: 900px;
+        background-position: center;
+    }
+    .porsche{
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform all 0.3s ease;
+        background-color: #ffffff;
+    }
+    .porsche:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .Lamborghini{
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform all 0.3s ease;
+        background-color: #ffffff;
+    }
+    .Lamborghini:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .Rolls{
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform all .3s ease;
+        background-color: #ffffff;
+    }
+    .Rolls:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .hello{
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .design{
+        padding: 50px;
+        text-align: center;
+    }
+    .design img{
+        background-size: cover;
+        background-position: center;
+    }
+    .dell{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 30px;
+    }
+    .hero{
+        text-align: center;
+        align-items: center;
+        background-color: #1a1a1a;
+        color: white;
+        padding: 20px;
+    }
+    .god{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .how{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        height: 300px;
+    }
+    .don{
+        text-align: center;
+        align-items: center;
+        background-color: #1a1a1a;
+        color: white;
+        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .gg{
+        background-color: white;
+        padding: 30px;
+        gap: 20px;
+        width: 700px;
+        margin-left: 250px;
+        color: #1a1a1a;
+        font-style: italic;
+        border-radius: 10px;
+    }
+    .dd{
+        background-color: white;
+        padding: 30px;
+        gap: 20px;
+        width: 700px;
+        margin-left: 250px;
+        color: #1a1a1a;
+        font-style: italic;
+        border-radius: 10px;
+    }
+    .are{
+        padding: 100px;
+        background-color: #f9f9f9;
+    }
+    .tt p{
+        color: black;
+        margin-right: 550px;
+    }
+    .tt input{
+        margin-bottom: 20px;
+         display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .rr input{
+         width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .rr input{
+        height: 150px;
+    }
+    .ss{
+        max-width: 600px;
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <span class="white">Elite</span><span class="orange">Motors</span>
+    <div class="flex">
+    <nav>
+    <ul>
+    <a href="">Home</a>
+    <a href="">Featured</a>
+    <a href="">About</a>
+    <a href="">Servises</a>
+    <a href="">Testimonials</a>
+    <a href="">Contact</a>
+    </ul>
+    </nav>
+    </div>
+    </header>
+    <section class="text">
+    <h1 style="font-size: 50px;">Experience Automative <br>
+        Exellence
+    </h1>
+    <p>Discover the perfect blend of performance, luxury, and innovation with our premium selection
+        of vehicles. Your journey to automotive perfection starts here.
+    </p>
+    <button style="border: none; background-color: #d4af37; text-align: center; margin: 5px; padding: 12px 30px; font-size: 15px; font: bold;"><a href=""></a>EXPLORE COLLECTION</button>
+    <button style=" background-color: black; text-align: center; color: white; border: 2px solid #d4af37; width: 140px; padding: 12px 30px; font-size: 15px; font: bold;">Contect Us</button>
+    </section>
+    <section class="design">
+    <h1>Featured Vehicles</h1>
+    <p>Explore our handpicked selection of premium automobiles that combine performance, luxury, and
+        cutting-edge technology.
+    </p>
+    <div class="hello">
+    <div class="porsche">
+    <img src="mceu_566975458171757065657504.webp" width="300px">
+    <h2>Porsche 911 Turbo S</h2>
+    <p>The epitome of sports car performance with <br>
+     luxurious comfort for everyday driving.</p>
+     <h1 style="color: #d4af37;">$129,999</h1>
+     <p>205 mph 640hp 2.6s</p>
+    </div>
+    <div class="Lamborghini">
+    <img src="images.jpg"  width="300px">
+    <h1>Lamborghini Aventador</h1>
+    <p>An iconic super sports car that represents the <br>
+    pinnacle of Lamborghini's engineering.</p>
+    <h1 style="color: #d4af37;">$198,500</h1>
+    </div>
+    <div class="Rolls">
+    <img src="images (1).jpg" width="300px">
+    <h1>Rolls-Royce Ghost</h1>
+    <p>The most technologically advanced Rolls- <br>
+    Royce yet, with unparalleled comfort.
+    </p>
+    <h1 style="color: #d4af37;">$325,000</h1>
+    </div>
+    </div>
+    </section>
+    <section class="hero">
+    <h1>Our Legacy of Excellence</h1>
+    <p>For over three decades, Elite Motors has been the premier destination for automotive enthusiasts.</p>
+    <div class="dell">
+    <div class="villen">
+    <img src="futuristic-supercar-snowy-canyon.jpg" width="400px">
+    </div>
+    <div class="god">
+    <h2>Three Decades of Automotive Excellence</h2>
+    <p>Since our founding in 1990, Elite Motors has established itself as the premier <br>
+    destination for automotive enthusiasts seeking the finest vehicles from around <br>
+    the world. Our commitment to quality, customer service, and an unparalleled <br>
+    selection has made us a trusted name in the luxury automotive industry.</p>
+    <p>We carefully curate our inventory to include only the most exceptional vehicles, <br>
+    each thoroughly inspected and certified to meet our rigorous standards. Our <br>
+    team of automotive experts is dedicated to helping you find the perfect vehicle <br>
+    to match your lifestyle and aspirations.</p>
+    </div>
+    </div>
+    </section>
+    <section class="design">
+    <h1>Our Premium Services</h1>
+    <p>We offer a comprehensive range of services to ensure your luxury automotive experience is <br>
+    seamless.</p>
+    <br><br>
+    <div class="how">
+    <div class="Rolls">
+    <h1>Vehicle <br>
+    Sourcing</h1>
+    <p>We'll find your dream car <br>
+    from anywhere in the world, <br>
+    handling all the logistics and <br>
+    paperwork.</p>
+    </div>
+    <div class="Rolls">
+    <h1>Premium  <br>
+    Maintenance</h1>
+    <p>Our certified technicians <br>
+    provide expert care using <br>
+    only genuine parts and latest <br>
+    equipment.</p>
+    </div>
+    <div class="Rolls">
+    <h1>Extended  <br>
+    Warranty</h1>
+    <p>Comprehensive protection <br>
+    plans that give you peace of <br>
+    mind long after your <br>
+    purchase.</p>
+    </div>
+    <div class="Rolls">
+    <h1>Financing <br>
+    Solutions</h1>
+    <p>Flexible financing options <br>
+    tailored to your needs with <br>
+    competitive rates and terms.</p>
+    </div>
+    </div>
+    </section>
+    <section class="don">
+    <h1>Client Testimonials</h1>
+    <p>Hear what our valued clients have to say about their experience with Elite Motors.</p> <br><br>
+    <div class="gg">
+    <p>Elite Motors made my dream of owning a Porsche a reality. Their attention to detail and customer <br>
+    service is unmatched. The entire process was seamless from start to finish.</p>
+    </div> <br><br>
+    <div class="dd">
+    <p>I've purchased three vehicles from Elite Motors over the years, and each experience has been <br>
+    exceptional. Their knowledge and professionalism are why I keep coming back.</p>
+    </div>
+    <br><br><br><br>
+    </section>
+    <section>
+    <h1>Contact Us</h1>
+        <p>Reach out to discuss how we can help your business grow.</p>
+        <div class="ss">
+        <div class="tt">
+        <p class="tt">Name</p>
+        <input type="text">
+        <p class="tt">Email</p>
+        <input type="text">
+        <div class="rr">
+        <p>Message</p>
+        <input type="text" >
+        <br><br>
+        </div>
+        <button style="background-color: #3498db; padding: 10px; text-align: center; margin-right: 490px;border: none;"><a href="#"></a>Send Massage</button>
+        </div>
+    </section>
+</body>
+</html>
